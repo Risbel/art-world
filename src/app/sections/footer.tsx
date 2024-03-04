@@ -1,13 +1,14 @@
 import React from "react";
-import ParticlesBackground from "../components/config/ParticlesBackground";
+import ContactInfo from "../components/footer/ContactInfo";
+import FooterBackground from "../components/footer/FooterBackground";
 
 const Footer = () => {
   return (
-    <div className="h-56 w-full flex justify-center items-center border ">
-      <p className="text-white">Footer</p>
-      <div className="relative overflow-hidden h-full w-full">
-        <ParticlesBackground />
+    <div className="relative h-72 w-full overflow-hidden">
+      <div className="absolute top-8 left-12">
+        <ContactInfo />
       </div>
+      <FooterBackground />
     </div>
   );
 };

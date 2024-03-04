@@ -4,7 +4,7 @@ const particlesConfig: ISourceOptions = {
   fullScreen: false,
   background: {
     color: {
-      value: "#0000000",
+      value: "",
     },
   },
   fpsLimit: 120,
@@ -31,10 +31,10 @@ const particlesConfig: ISourceOptions = {
   },
   particles: {
     color: {
-      value: "#ffffff",
+      value: "#000000",
     },
     links: {
-      color: "#ffffff",
+      color: "#000000",
       distance: 100,
       enable: true,
       opacity: 0.5,
