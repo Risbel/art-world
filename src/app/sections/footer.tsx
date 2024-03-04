@@ -1,6 +1,7 @@
 import React from "react";
 import ContactInfo from "../components/footer/ContactInfo";
 import FooterBackground from "../components/footer/FooterBackground";
+import ParticlesBg from "../components/ParticlesBackground";
 
 const Footer = () => {
   return (
@@ -9,6 +10,7 @@ const Footer = () => {
         <ContactInfo />
       </div>
       <FooterBackground />
+      <ParticlesBg />
     </div>
   );
 };

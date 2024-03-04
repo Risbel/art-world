@@ -47,7 +47,7 @@ const ContactInfo = () => {
         {contactInfo.map((item, i) => (
           <div className="flex gap-5 relative z-20 pl-2" key={i}>
             <Image src={item.imageUrl} alt={item.alt} width={item.width} height={item.height} />
-            <p className="text-xl font-light">{item.text}</p>
+            <p className="text-white text-xl font-light">{item.text}</p>
           </div>
         ))}
       </div>
