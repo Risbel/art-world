@@ -1,6 +1,6 @@
 import { ISourceOptions } from "@tsparticles/engine";
 
-const particlesConfig: ISourceOptions = {
+const particlesFooterConfig: ISourceOptions = {
   fullScreen: false,
   background: {
     color: {
@@ -69,4 +69,4 @@ const particlesConfig: ISourceOptions = {
   detectRetina: true,
 };
 
-export default particlesConfig;
+export default particlesFooterConfig;

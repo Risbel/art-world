@@ -1,7 +1,7 @@
 import React from "react";
 import ContactInfo from "../components/footer/ContactInfo";
 import FooterBackground from "../components/footer/FooterBackground";
-import ParticlesBg from "../components/ParticlesBackground";
+import ParticlesFooter from "../components/ParticlesFooter";
 
 const Footer = () => {
   return (
@@ -10,7 +10,7 @@ const Footer = () => {
         <ContactInfo />
       </div>
       <FooterBackground />
-      <ParticlesBg />
+      <ParticlesFooter />
     </div>
   );
 };

@@ -3,13 +3,14 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { type Container } from "@tsparticles/engine";
-import particlesConfig from "./config/particles.config";
+import particlesFooterConfig from "./config/particlesFooter.config";
+
 // import { loadAll } from "@tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
 // import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "pnpm add" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
-const ParticlesBg = () => {
+const ParticlesFooter = () => {
   const [init, setInit] = useState(false);
 
   // this should be run only once per application lifetime
@@ -32,10 +33,10 @@ const ParticlesBg = () => {
   if (init) {
     return (
       <Particles
-        className="h-full w-full absolute -z-10"
-        id="tsparticles"
+        className="h-full w-full absolute z-0"
+        id="tsparticles-footer"
         particlesLoaded={particlesLoaded}
-        options={particlesConfig}
+        options={particlesFooterConfig}
       />
     );
   }
@@ -43,4 +44,4 @@ const ParticlesBg = () => {
   return <></>;
 };
 
-export default ParticlesBg;
+export default ParticlesFooter;
