@@ -1,6 +1,33 @@
+"use client";
+
 import Divider from "./Divider";
 
 const FormSubscribe = () => {
+  // const addSubscription = async (e: FormData) => {
+  //   "use server";
+  //   const fullName = e.get("fullName")?.toString();
+  //   const email = e.get("email")?.toString();
+  //   const moreInfo = e.get("moreInfo")?.toString();
+
+  //   if (!fullName || !email) {
+  //     return;
+  //   }
+
+  //   const newSubscription = {
+  //     fullName,
+  //     email,
+  //     moreInfo,
+  //   };
+
+  //   await fetch("http://artworld-api.myaipeople.com/api/subscriptions/", {
+  //     method: "POST",
+  //     body: JSON.stringify(newSubscription),
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //   });
+  // };
+
   return (
     <div className="flex justify-center w-1/2 relative z-50">
       <div className="w-2/3 flex flex-col items-center border-2 p-6 rounded-xl border-yellow-400 backdrop-blur-md">
@@ -10,7 +37,14 @@ const FormSubscribe = () => {
           <Divider thickness={4} />
         </div>
 
-        <form action="" className="flex flex-col gap-4 w-full">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            alert("Subscription submited");
+          }}
+          // action={addSubscription}
+          className="flex flex-col gap-4 w-full"
+        >
           <div>
             <label className="pl-2" htmlFor="fullName">
               Full name

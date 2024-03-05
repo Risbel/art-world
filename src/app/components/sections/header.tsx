@@ -10,8 +10,8 @@ const Header = () => {
       <div className="flex flex-col w-1/2 items-center">
         <div className="relative z-30 mb-16">
           <div className="flex flex-col items-end leading-[200px]">
-            <h1 className="text-[150px] font-thin">UNIÓN</h1>
-            <h2 className="text-[150px] font-thin text-gray-400">
+            <h1 className="text-[150px] font-light">UNIÓN</h1>
+            <h2 className="text-[150px] font-light text-gray-400">
               <span className="relative bottom-8">_ </span>AC
             </h2>
           </div>
