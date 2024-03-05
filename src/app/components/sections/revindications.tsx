@@ -23,7 +23,7 @@ const Revindications = () => {
 
       <div className="flex justify-center -translate-x-24">
         <div className="flex flex-col gap-4 items-center">
-          <Arrow color="#fce205" strokeWidth={15} headSize={0} start={box1Ref} end="elem4" />
+          <Arrow color="#fce205" strokeWidth={20} headSize={0} start={box1Ref} end="elem4" />
 
           <p className="border border-yellow-400 p-4 bg-gray-300/60 hover:bg-white/80 cursor-zoom-in transition-colors duration-300 backdrop-blur-md rounded-xl relative z-20 text-2xl">
             Creación de una estructura legal <br /> que garantice la
@@ -39,7 +39,7 @@ const Revindications = () => {
 
       <div className="flex">
         <div className="flex gap-6 items-center">
-          <Arrow color="#fce205" strokeWidth={15} headSize={0} start={box1Ref} end="elem2" />
+          <Arrow color="#fce205" strokeWidth={20} headSize={0} start={box1Ref} end="elem2" />
           <div className="bg-yellow-400 relative z-10 rounded-full p-4 rounded-br-none">
             <div className="relative rounded-br-none p-8" id="elem2" ref={box2Ref}>
               <span className="text-5xl">2</span>
@@ -57,7 +57,7 @@ const Revindications = () => {
       </div>
 
       <div className="flex justify-center">
-        <Arrow color="#fce205" strokeWidth={15} headSize={0} start={box3Ref} end="elem2" />
+        <Arrow color="#fce205" strokeWidth={20} headSize={0} start={box3Ref} end="elem2" />
 
         <div className="flex gap-6">
           <div className="bg-yellow-400 relative z-10 rounded-full p-4 rounded-br-none">
@@ -97,7 +97,7 @@ const Revindications = () => {
       </div>
 
       <div className="flex justify-start">
-        <Arrow color="#fce205" strokeWidth={15} headSize={0} start={box4Ref} end="elem5" />
+        <Arrow color="#fce205" strokeWidth={20} headSize={0} start={box4Ref} end="elem5" />
 
         <div className="flex gap-4 items-center">
           <div className="bg-yellow-400 relative z-10 rounded-full p-4 rounded-br-none">
@@ -116,7 +116,7 @@ const Revindications = () => {
       </div>
 
       <div className="flex justify-center">
-        <Arrow color="#fce205" strokeWidth={15} headSize={0} start={box5Ref} end="elem6" />
+        <Arrow color="#fce205" strokeWidth={20} headSize={0} start={box5Ref} end="elem6" />
 
         <div className="flex gap-4 items-center">
           <p className="border border-yellow-400 p-4 bg-gray-300/60 hover:bg-white/80 cursor-zoom-in transition-colors duration-300 backdrop-blur-md rounded-xl relative z-20 text-2xl">
@@ -133,7 +133,7 @@ const Revindications = () => {
       </div>
 
       <div className="flex justify-end">
-        <Arrow color="#fce205" strokeWidth={15} headSize={0} start={box6Ref} end="elem7" />
+        <Arrow color="#fce205" strokeWidth={20} headSize={0} start={box6Ref} end="elem7" />
 
         <div className="flex flex-col gap-4 items-center">
           <div className="bg-yellow-400 relative z-10 rounded-full p-4 rounded-br-none">
@@ -172,11 +172,11 @@ const Revindications = () => {
             </div>
           </div>
         </div>
-        <Arrow color="#fce205" strokeWidth={15} headSize={0} start={box7Ref} end="elem8" />
+        <Arrow color="#fce205" strokeWidth={20} headSize={0} start={box7Ref} end="elem8" />
       </div>
 
       <div className="flex justify-center -translate-y-80">
-        <Arrow color="#fce205" strokeWidth={15} headSize={0} start={box8Ref} end="elem9" />
+        <Arrow color="#fce205" strokeWidth={20} headSize={0} start={box8Ref} end="elem9" />
 
         <div className="flex gap-4 items-center">
           <p className="border border-yellow-400 p-4 bg-gray-300/60 hover:bg-white/80 cursor-zoom-in transition-colors duration-300 backdrop-blur-md rounded-xl relative z-20 text-2xl">
