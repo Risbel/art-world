@@ -1,7 +1,7 @@
 import React from "react";
-import ContactInfo from "../components/footer/ContactInfo";
-import FooterBackground from "../components/footer/FooterBackground";
-import ParticlesFooter from "../components/ParticlesFooter";
+import ContactInfo from "../footer/ContactInfo";
+import FooterBackground from "../footer/FooterBackground";
+import ParticlesFooter from "../ParticlesFooter";
 
 const Footer = () => {
   return (

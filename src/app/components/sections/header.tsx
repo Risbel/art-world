@@ -1,4 +1,4 @@
-import ParticlesHeader from "../components/ParticlesHeader";
+import ParticlesHeader from "../ParticlesHeader";
 
 const Header = () => {
   return (
