@@ -16,7 +16,7 @@ const Revindications = () => {
   const box9Ref = useRef(null);
 
   return (
-    <div className="flex flex-col gap-4 relative pt-20 px-20">
+    <div className="hidden lg:flex flex-col gap-4 relative pt-20 px-20">
       <div className="absolute right-32 top-64">
         <RevindicationsH1 />
       </div>
