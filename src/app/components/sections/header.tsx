@@ -1,5 +1,6 @@
 import FormSubscribe from "../FormSubscribe";
 import ParticlesHeader from "../ParticlesHeader";
+import ScrollSubscriptionBtn from "../buttons/ScrollSubscriptionBtn";
 
 const Header = () => {
   return (
@@ -21,11 +22,8 @@ const Header = () => {
             Unión de Artistas <br /> Contemporáneos de España
           </span>
         </p>
-        <button className="block relative z-20 bg-yellow-300 hover:bg-yellow-400 p-2 rounded-md mt-8 w-full md:hidden">
-          <span className="text-yellow-900">Subscríbete</span>
-        </button>
+        <ScrollSubscriptionBtn />
       </div>
-
       <FormSubscribe />
     </div>
   );

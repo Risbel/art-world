@@ -5,7 +5,7 @@ import Divider from "./Divider";
 import AddSubscriptionBtn from "./buttons/AddSubscriptionBtn";
 import { useRef } from "react";
 
-const FormSubscribe = async () => {
+const FormSubscribe = () => {
   const ref = useRef<HTMLFormElement>(null);
   // const res = await fetch("https://artworld-api.myaipeople.com/api/subscriptions/", {
   //   cache: "no-cache",
@@ -13,7 +13,7 @@ const FormSubscribe = async () => {
   // const subscriptions: ISubscriptions = await res.json();
 
   return (
-    <div className="flex justify-center w-full md:w-1/2 relative z-50 px-4 mb-8 md:mb-0">
+    <section id="formSubscribe" className="flex justify-center w-full md:w-1/2 relative z-50 px-4 mb-8 md:mb-0">
       <div className="lg:w-2/3 flex flex-col items-center border-2 p-4 md:p-6 rounded-xl border-yellow-400 backdrop-blur-md">
         <div className="flex flex-col w-full md:gap-2 mb-4">
           <Divider thickness={4} />
@@ -121,7 +121,7 @@ const FormSubscribe = async () => {
           );
         })}
       </div> */}
-    </div>
+    </section>
   );
 };
 
