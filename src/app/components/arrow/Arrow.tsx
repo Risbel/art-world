@@ -1,6 +1,3 @@
-"use client";
-
-import React from "react";
 import Xarrow from "react-xarrows";
 
 const Arrow = ({ color, strokeWidth, headSize, start, end }: IArrow) => {
