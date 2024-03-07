@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, MouseEvent, useRef, useMemo } from "react";
+import ModalCarousel from "./ModalCarousel";
 
 function throttle<T extends (...args: any[]) => any>(func: T, delay: number): (...args: Parameters<T>) => void {
   let lastCall = 0;
@@ -73,7 +74,7 @@ const CardCarousel = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <div
-        className="card relative mx-2 h-80 w-full md:h-72 md:w-72 lg:h-[500px] lg:w-96 rounded-xl bg-white transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform"
+        className="card relative mx-2 h-80 w-full md:h-72 md:w-72 lg:h-[450px] lg:w-96 rounded-2xl bg-white transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform"
         onMouseMove={onMouseMove}
         onMouseLeave={onMouseLeave}
         style={{
@@ -81,7 +82,7 @@ const CardCarousel = ({ children }: { children: React.ReactNode }) => {
           transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
         }}
       >
-        <div className="group relative flex h-full w-full select-none items-center justify-center rounded-lg font-light border cursor-{}">
+        <div className="group relative flex h-full w-full select-none items-center justify-center rounded-xl font-light border cursor-{}">
           <div className="duration-600 absolute -inset-0.5 -z-10 rounded-lg bg-gradient-to-b from-[#c7d2fe] to-[#f2f0ff] opacity-0 blur transition group-hover:opacity-75" />
           <div
             ref={divRef}
@@ -101,12 +102,9 @@ const CardCarousel = ({ children }: { children: React.ReactNode }) => {
                 background: `radial-gradient(600px circle at ${position.x}px ${position.y}px, rgb(255, 255, 255), transparent 40%)`,
               }}
             />
-            <div className="relative flex flex-col overflow-y-hidden lg:justify-center h-full text-balance">
-              {children}
-            </div>
-            <button className="absolute z-50 bottom-4 right-4 bg-yellow-400 px-2 py-1 rounded-lg">
-              <span className="font-semibold">More</span>
-            </button>
+            {children}
+
+            <ModalCarousel children={children} />
           </div>
         </div>
       </div>

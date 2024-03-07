@@ -96,7 +96,7 @@ const RevindicationsContainer = ({ children }: { children: React.ReactNode }) =>
 
 const Revindications = () => {
   return (
-    <div>
+    <div className="h-screen">
       <RevindicationsH1 />
       <CarouselRevindications />
       {/* <div className="grid grid-cols-4 items-start gap-4 relative pt-20 px-20">
