@@ -6,7 +6,7 @@ import ParticlesFooter from "../ParticlesFooter";
 const Footer = () => {
   return (
     <div className="relative h-72 w-full overflow-hidden">
-      <div className="absolute top-8 left-12">
+      <div className="absolute z-30 top-8 left-3 lg:left-12">
         <ContactInfo />
       </div>
       <FooterBackground />
