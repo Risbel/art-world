@@ -17,7 +17,7 @@ const Header = () => {
             </h2>
           </div>
         </div>
-        <p className="relative z-30 text-2xl lg:text-4xl font-thin text-yellow-500">
+        <p className="relative z-30 text-2xl lg:text-4xl font-light text-yellow-500">
           <span>
             Unión de Artistas <br /> Contemporáneos de España
           </span>

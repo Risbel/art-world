@@ -13,7 +13,7 @@ const FormSubscribe = () => {
   // const subscriptions: ISubscriptions = await res.json();
 
   return (
-    <section id="formSubscribe" className="flex justify-center w-full md:w-1/2 relative z-50 px-4 mb-8 md:mb-0">
+    <section id="formSubscribe" className="flex justify-center w-full md:w-1/2 relative z-50 px-4 mb-8 md:mb-0 pt-16">
       <div className="lg:w-2/3 flex flex-col items-center border-2 p-4 md:p-6 rounded-xl border-yellow-400 backdrop-blur-md">
         <div className="flex flex-col w-full md:gap-2 mb-4">
           <Divider thickness={4} />
