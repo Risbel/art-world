@@ -8,7 +8,7 @@ export interface IRevContent {
 const revContent: IRevContent[] = [
   {
     content: (
-      <p className="text-2xl">
+      <p className="text-3xl">
         Negociación de un
         <span className="font-semibold text-3xl"> Estatuto específico para las Artes Visuales</span>
       </p>
@@ -16,16 +16,16 @@ const revContent: IRevContent[] = [
   },
   {
     content: (
-      <p className="text-2xl">
+      <p className="text-3xl">
         Creación de un
         <span className="font-semibold text-3xl"> nuevo paradigma legal y socio-fiscal </span>
-        específico para las/os artistas visuales
+        específico para las/os artistas visuales.
       </p>
     ),
   },
   {
     content: (
-      <p className="text-2xl">
+      <p className="text-3xl">
         Creación de una estructura legal que garantice la
         <span className="font-semibold text-3xl"> igualdad de género</span> en las Artes Visuales
       </p>
@@ -34,8 +34,8 @@ const revContent: IRevContent[] = [
   {
     content: (
       <p className="text-2xl">
-        Reconocimiento del y de la artista visual como
-        <span className="font-semibold text-3xl"> creador/a de patrimonio cultural estatal </span>y protección legal de
+        Reconocimiento a artistas visuales como
+        <span className="font-semibold text-3xl"> creadores de patrimonio cultural estatal </span>y protección legal de
         los legados de las/os artistas visuales.
       </p>
     ),
@@ -51,8 +51,8 @@ const revContent: IRevContent[] = [
   },
   {
     content: (
-      <p className="text-3xl">
-        Aplicación, con rango de ley, del <span className="font-semibold text-4xl">código de buenas prácticas </span>
+      <p className="text-2xl">
+        Aplicación, con rango de ley, del <span className="font-semibold text-3xl">código de buenas prácticas </span>
         en las Artes Visuales
       </p>
     ),
@@ -106,8 +106,8 @@ const CarouselRevindications = () => {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="md:hidden flex absolute translate-x-16 bg-white/80 border-none" />
-      <CarouselNext className="md:hidden flex absolute -translate-x-16 bg-white/80 border-none" />
+      <CarouselPrevious className="md:hidden flex absolute translate-x-16 bg-white/40 border-none" />
+      <CarouselNext className="md:hidden flex absolute -translate-x-16 bg-white/40 border-none" />
     </Carousel>
   );
 };
