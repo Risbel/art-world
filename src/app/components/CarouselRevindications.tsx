@@ -117,15 +117,15 @@ const CarouselRevindications = () => {
       }}
       className="w-full h-full"
     >
-      <CarouselContent className="lg:pl-8">
+      <CarouselContent className="lg:px-16">
         {revContent.map((rev, index) => (
-          <CarouselItem key={index} className="flex basis md:basis-1/3 lg:basis-1/4 py-16 lg:py-32">
+          <CarouselItem key={index} className="flex basis md:basis-1/3 lg:basis-1/4 py-16 lg:pt-24 lg:pb-28">
             <CardCarousel>{rev.content}</CardCarousel>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="md:hidden flex absolute translate-x-16 bg-white/40 border-none" />
-      <CarouselNext className="md:hidden flex absolute -translate-x-16 bg-white/40 border-none" />
+      <CarouselPrevious className="flex absolute translate-x-16 bg-white/20 backdrop-blur-sm border-none" />
+      <CarouselNext className="flex absolute -translate-x-16 bg-white/20 backdrop-blur-sm border-none" />
     </Carousel>
   );
 };

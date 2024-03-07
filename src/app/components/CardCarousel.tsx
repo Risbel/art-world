@@ -74,7 +74,7 @@ const CardCarousel = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <div
-        className="card relative mx-2 h-80 w-full md:h-72 md:w-72 lg:h-[450px] lg:w-96 rounded-2xl bg-white transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform"
+        className="card relative mx-4 h-80 w-full md:h-72 md:w-72 lg:h-[450px] lg:w-96 rounded-2xl bg-white transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform"
         onMouseMove={onMouseMove}
         onMouseLeave={onMouseLeave}
         style={{
