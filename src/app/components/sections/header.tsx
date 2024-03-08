@@ -3,6 +3,7 @@ import FormSubscribe from "../FormSubscribe";
 import ParticlesHeader from "../ParticlesHeader";
 import ScrollSubscriptionBtn from "../buttons/ScrollSubscriptionBtn";
 import { X } from "lucide-react";
+import LinkEncoded from "../LinkEncoded";
 
 const Header = () => {
   return (
@@ -31,7 +32,7 @@ const Header = () => {
           </span>
         </p>
 
-        <X className="h-10 w-10 lg:h-20 lg:w-20" />
+        <LinkEncoded />
 
         <Image src={"/Goma-logo-dark.svg"} width={400} height={200} alt="Goma logo dark" />
         <ScrollSubscriptionBtn />
