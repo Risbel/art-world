@@ -17,7 +17,7 @@ const FormSubscribe = () => {
       <div className="lg:w-2/3 flex flex-col items-center border-2 p-4 md:p-6 rounded-xl border-yellow-400 backdrop-blur-md">
         <div className="flex flex-col w-full md:gap-2 mb-4">
           <Divider thickness={4} />
-          <p className="text-xl md:text-3xl text-center">Subscribirse</p>
+          <p className="text-xl md:text-3xl text-center">Suscríbase aquí!</p>
           <Divider thickness={4} />
         </div>
 
