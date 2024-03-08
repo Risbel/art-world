@@ -25,7 +25,7 @@ const LinkEncoded = () => {
   return (
     <div>
       <button onClick={redirectEncoded}>
-        <X className="h-10 w-10 lg:h-20 lg:w-20" />
+        <X className="h-10 w-10 lg:h-16 lg:w-16" />
       </button>
     </div>
   );

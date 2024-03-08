@@ -63,7 +63,7 @@ const revContent: IRevContent[] = [
     content: (
       <div className="relative flex flex-col justify-center overflow-y-hidden h-full text-pretty">
         <p className="text-2xl md:text-3xl">
-          Aplicación, con rango de ley, del <span className="font-semibold text-3xl">código de buenas prácticas </span>
+          Aplicación, con rango de ley, del <span className="font-semibold text-2 xl">código de buenas prácticas </span>
           en las Artes Visuales
         </p>
       </div>
@@ -119,7 +119,7 @@ const CarouselRevindications = () => {
     >
       <CarouselContent className="lg:px-16">
         {revContent.map((rev, index) => (
-          <CarouselItem key={index} className="flex basis md:basis-1/3 lg:basis-1/4 py-16 lg:pt-24 lg:pb-28">
+          <CarouselItem key={index} className="flex basis md:basis-1/3 lg:basis-1/4 py-10 lg:pt-12 lg:pb-28">
             <CardCarousel>{rev.content}</CardCarousel>
           </CarouselItem>
         ))}

@@ -11,7 +11,7 @@ export default function Home() {
       <Navbar />
       <Header />
       <Divider />
-      <div className="lg:py-24">
+      <div className="lg:py-16">
         <LogoCarousel />
       </div>
       <Divider />

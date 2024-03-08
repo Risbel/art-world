@@ -9,11 +9,11 @@ const FormSubscribe = () => {
   const ref = useRef<HTMLFormElement>(null);
 
   return (
-    <section id="formSubscribe" className="flex justify-center w-full md:w-1/2 relative z-50 px-4 mb-8 md:mb-0 pt-16">
+    <section id="formSubscribe" className="flex justify-center w-full md:w-1/2 relative z-50 px-4 mb-8 md:mb-0 pt-12">
       <div className="lg:w-2/3 flex flex-col items-center border-2 p-4 md:p-6 rounded-xl border-yellow-400 backdrop-blur-md">
-        <div className="flex flex-col w-full md:gap-2 mb-4">
+        <div className="flex flex-col w-full mb-4">
           <Divider thickness={4} />
-          <p className="text-xl md:text-3xl text-center">Suscríbase aquí!</p>
+          <p className="text-xl md:text-2xl text-center">Suscríbase aquí!</p>
           <Divider thickness={4} />
         </div>
 
@@ -23,15 +23,15 @@ const FormSubscribe = () => {
             await addSubscription(formData);
             ref.current?.reset();
           }}
-          className="flex flex-col gap-2 md:gap-4 w-full"
+          className="flex flex-col gap-2 w-full"
         >
           <div>
-            <label className="pl-2 text-xs md:text-base" htmlFor="name">
+            <label className="pl-2 text-xs" htmlFor="name">
               Full name
             </label>
             <input
               required
-              className="border pl-2 py-1 rounded-md w-full h-8 md:h-12 text-xs md:text-base"
+              className="border pl-2 py-1 rounded-md w-full h-8 md:h-10 text-xs md:text-base"
               placeholder="Full name"
               min={2}
               type="text"
@@ -41,12 +41,12 @@ const FormSubscribe = () => {
             />
           </div>
           <div>
-            <label className="pl-2 text-xs md:text-base" htmlFor="email">
+            <label className="pl-2 text-xs" htmlFor="email">
               Email
             </label>
             <input
               required
-              className="border pl-2 py-1 rounded-md w-full h-8 md:h-12 text-xs md:text-base"
+              className="border pl-2 py-1 rounded-md w-full h-8 md:h-10 text-xs md:text-base"
               placeholder="Email"
               min={2}
               type="email"
@@ -56,12 +56,12 @@ const FormSubscribe = () => {
             />
           </div>
           <div>
-            <label className="pl-2 text-xs md:text-base" htmlFor="phone">
+            <label className="pl-2 text-xs" htmlFor="phone">
               Phone
             </label>
             <input
               required
-              className="border pl-2 py-1 rounded-md w-full h-8 md:h-12 text-xs md:text-base"
+              className="border pl-2 py-1 rounded-md w-full h-8 md:h-10 text-xs md:text-base"
               placeholder="phone"
               min={2}
               type="tel"
@@ -72,11 +72,11 @@ const FormSubscribe = () => {
           </div>
 
           <div>
-            <label className="pl-2 text-xs md:text-base" htmlFor="address">
+            <label className="pl-2 text-xs" htmlFor="address">
               Address (optional)
             </label>
             <input
-              className="border pl-2 py-1 rounded-md w-full h-8 md:h-12 text-xs md:text-base"
+              className="border pl-2 py-1 rounded-md w-full h-8 md:h-10 text-xs md:text-base"
               placeholder="Address"
               min={2}
               type="text"
@@ -87,11 +87,11 @@ const FormSubscribe = () => {
           </div>
 
           <div>
-            <label className="pl-2 text-xs md:text-base" htmlFor="company">
+            <label className="pl-2 text-xs" htmlFor="company">
               Company (optional)
             </label>
             <input
-              className="border pl-2 py-1 rounded-md w-full h-8 md:h-12 text-xs md:text-base"
+              className="border pl-2 py-1 rounded-md w-full h-8 md:h-10 text-xs md:text-base"
               placeholder="Company"
               min={2}
               type="text"

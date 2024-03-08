@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className="flex flex-col md:flex-row md:h-screen gap-16 items-center bg-white w-full overflow-hidden relative">
       <Image
-        className="h-[50px] w-[100px] lg:h-[100px] lg:w-[200px] absolute z-40 left-2 top-4 lg:top-6 lg:left-6"
+        className="h-[50px] w-[100px] lg:h-[80px] lg:w-[160px] absolute z-40 left-2 top-4 lg:top-6 lg:left-6"
         src={"/ARCO-logo.svg"}
         alt="Goma logo dark"
         width={200}
@@ -20,13 +20,13 @@ const Header = () => {
       <div className="relative z-30 flex flex-col gap-2 lg:gap-4 justify-center w-1/2 items-center h-screen md:h-auto">
         <div>
           <div className="flex flex-col items-end lg:leading-[200px]">
-            <h1 className="text-7xl lg:text-[130px] font-light">UNIÓN</h1>
-            <h2 className="text-7xl lg:text-[130px] font-light text-gray-400">
+            <h1 className="text-7xl lg:text-[100px] font-light">UNIÓN</h1>
+            <h2 className="text-7xl lg:text-[100px] font-light text-gray-400">
               <span className="relative bottom-2 lg:bottom-4">_ </span>AC
             </h2>
           </div>
         </div>
-        <p className="text-xl lg:text-3xl font-light">
+        <p className="text-xl lg:text-2xl font-light">
           <span>
             Unión de Artistas <br /> Contemporáneos de España
           </span>
@@ -34,7 +34,7 @@ const Header = () => {
 
         <LinkEncoded />
 
-        <Image src={"/Goma-logo-dark.svg"} width={400} height={200} alt="Goma logo dark" />
+        <Image src={"/Goma-logo-dark.svg"} width={350} height={175} alt="Goma logo dark" />
         <ScrollSubscriptionBtn />
       </div>
 
