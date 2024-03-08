@@ -1,7 +1,6 @@
 import React from "react";
 import ContactInfo from "../footer/ContactInfo";
 import FooterBackground from "../footer/FooterBackground";
-import ParticlesFooter from "../ParticlesFooter";
 
 const Footer = () => {
   return (
@@ -9,8 +8,8 @@ const Footer = () => {
       <div className="absolute z-30 top-8 left-3 lg:left-12">
         <ContactInfo />
       </div>
+
       <FooterBackground />
-      <ParticlesFooter />
     </div>
   );
 };

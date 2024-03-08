@@ -1,4 +1,6 @@
 import { ISubscriptions } from "@/actions/subscribeTypes";
+import { ChevronLeft } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const Subscriptions = async () => {
@@ -11,18 +13,29 @@ const Subscriptions = async () => {
   const subscriptions: ISubscriptions = await res.json();
 
   return (
-    <div className="flex flex-wrap gap-4 p-32">
-      {subscriptions.results.map((item) => {
-        return (
-          <div className="border p-4 rounded-xl" key={item.id}>
-            <p className="font-semibold text-xl">👤 {item.name}</p>
-            <p>✉️ {item.email}</p>
-            <p>📞 {item.phone}</p>
-            <p>🌎 {item.address}</p>
-            <p>Company: {item.company}</p>
-          </div>
-        );
-      })}
+    <div className="p-16">
+      <div className="flex">
+        <Link className="flex bg-yellow-400 hover:bg-yellow-300 pr-2 py-2 rounded-lg shadow-md" href={"/"}>
+          <ChevronLeft /> <span className="font-semibold">Go back</span>
+        </Link>
+      </div>
+
+      <div className="p-8">
+        <h1 className="text-3xl font-semibold">Subscriptors:</h1>
+        <div className="flex flex-wrap gap-4 py-8">
+          {subscriptions.results.map((item) => {
+            return (
+              <div className="border p-4 rounded-xl" key={item.id}>
+                <p className="font-semibold text-xl">👤 {item.name}</p>
+                <p>✉️ {item.email}</p>
+                <p>📞 {item.phone}</p>
+                <p>🗺️ {item.address}</p>
+                <p>Company: {item.company}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </div>
   );
 };
