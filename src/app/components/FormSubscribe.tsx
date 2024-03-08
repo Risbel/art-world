@@ -7,10 +7,6 @@ import { useRef } from "react";
 
 const FormSubscribe = () => {
   const ref = useRef<HTMLFormElement>(null);
-  // const res = await fetch("https://artworld-api.myaipeople.com/api/subscriptions/", {
-  //   cache: "no-cache",
-  // });
-  // const subscriptions: ISubscriptions = await res.json();
 
   return (
     <section id="formSubscribe" className="flex justify-center w-full md:w-1/2 relative z-50 px-4 mb-8 md:mb-0 pt-16">
@@ -108,19 +104,6 @@ const FormSubscribe = () => {
           <AddSubscriptionBtn />
         </form>
       </div>
-      {/* <div>
-        {subscriptions.results.map((sub) => {
-          return (
-            <div key={sub.id}>
-              <p>{sub.name}</p>
-              <p>{sub.email}</p>
-              <p>{sub.phone}</p>
-              <p>{sub.company}</p>
-              <p>{sub.address}</p>
-            </div>
-          );
-        })}
-      </div> */}
     </section>
   );
 };
@@ -137,23 +120,4 @@ export interface IPostSubscriptionsResp {
   is_active: boolean;
   created_at: string;
   updated_at: string;
-}
-
-export interface ISubscriptions {
-  count: 1;
-  next: null;
-  previous: null;
-  results: [
-    {
-      id: string;
-      name: string;
-      phone: string;
-      email: string;
-      address: string;
-      company: string;
-      is_active: boolean;
-      created_at: string;
-      updated_at: string;
-    }
-  ];
 }
