@@ -2,6 +2,8 @@ import { ISubscriptions } from "@/actions/subscribeTypes";
 import { ChevronLeft } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import Divider from "../components/Divider";
+import QrGeneratorPro from "./components/qr-generator/QrGeneratorPro";
 
 const Subscriptions = async () => {
   const res = await fetch("https://artworld-api.myaipeople.com/api/subscriptions/", {
@@ -36,6 +38,10 @@ const Subscriptions = async () => {
           })}
         </div>
       </div>
+
+      <Divider />
+
+      <QrGeneratorPro />
     </div>
   );
 };
